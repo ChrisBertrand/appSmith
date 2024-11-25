@@ -1,0 +1,13 @@
+UPDATE p."monthly_servicing_and_support_fees" SET
+		"opportunity_id" = '{{update_form.fieldState.opportunity_id.isVisible ? update_form.formData.opportunity_id : update_form.sourceData.opportunity_id}}',
+		"docusign_id" = '{{update_form.fieldState.docusign_id.isVisible ? update_form.formData.docusign_id : update_form.sourceData.docusign_id}}',
+    "merchant_name" = '{{update_form.fieldState.merchant_name.isVisible ? update_form.formData.merchant_name : update_form.sourceData.merchant_name}}',
+		"package" = '{{update_form.fieldState.package.isVisible ? update_form.formData.package : update_form.sourceData.package}}',
+		"fee_currency" = '{{update_form.fieldState.fee_currency.isVisible ? update_form.formData.fee_currency : update_form.sourceData.fee_currency}}',
+		"fee_value" = '{{update_form.fieldState.fee_value.isVisible ? update_form.formData.fee_value : update_form.sourceData.fee_value}}',
+		"occurrence" = '{{update_form.fieldState.occurrence.isVisible ? update_form.formData.occurrence : update_form.sourceData.occurrence}}',
+		"created_at" = '{{update_form.fieldState.created_at.isVisible ? update_form.formData.created_at : update_form.sourceData.created_at}}',
+		"created_by" = '{{update_form.fieldState.created_by.isVisible ? update_form.formData.created_by : update_form.sourceData.created_by}}',
+		"approved_at" = '{{update_form.fieldState.approved_at.isVisible ? update_form.formData.approved_at : update_form.sourceData.approved_at}}',
+		"approved_by" = '{{update_form.fieldState.approved_by.isVisible ? update_form.formData.approved_by : update_form.sourceData.approved_by}}'
+	WHERE "id" = {{data_table.selectedRow.id}};

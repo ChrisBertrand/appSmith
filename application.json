@@ -11,6 +11,14 @@
     {
       "id": "Page1",
       "isDefault": true
+    },
+    {
+      "id": "P.monthly_servicing_and_support_fees",
+      "isDefault": false
+    },
+    {
+      "id": "Movies",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

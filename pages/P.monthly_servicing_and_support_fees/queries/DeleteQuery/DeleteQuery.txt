@@ -1,0 +1,2 @@
+DELETE FROM p."monthly_servicing_and_support_fees"
+  WHERE "id" = {{data_table.triggeredRow.id}};

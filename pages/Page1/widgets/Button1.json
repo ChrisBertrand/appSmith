@@ -31,7 +31,7 @@
   "mobileRightColumn": 44,
   "mobileTopRow": 67,
   "needsErrorInfo": false,
-  "onClick": "{{Query1.run()}}",
+  "onClick": "{{Api1.run()}}",
   "parentColumnSpace": 14.203125,
   "parentId": "0",
   "parentRowSpace": 10,
